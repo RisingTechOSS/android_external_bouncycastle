@@ -130,7 +130,10 @@ java_library {
     defaults: ["bouncycastle-defaults"],
     installable: true,
     sdk_version: "core_current",
-    srcs: ["repackaged_platform/bcprov/src/main/java/**/*.java"],
+    srcs: [
+        "repackaged_platform/bcpkix/src/main/java/**/*.java",
+        "repackaged_platform/bcprov/src/main/java/**/*.java",
+    ],
 }
 
 unbundled_visibility = [
